@@ -8,7 +8,7 @@ function sample(iter, len) {
 
     if (len <= iter.length) {
         for (let i = 0; i < len; i++) {
-            rand = Math.floor(Math.random() * (iter.length -1));
+            rand = Math.floor(Math.random() * (iter.length -1)); //iter.length sets the range to the length of the array
             popped = iter.splice(rand, 1); //popped = [element] // e.g : popped = [9]
             sampled.push(popped[0]); //push(element at index 0 of popped) for instance : popped[0] = 9
         }
