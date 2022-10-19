@@ -1,4 +1,4 @@
-const mainArr = [1,2,3];
+const mainArr = [1, 2, 3];
 const listComb = [];
 
 function range(start, end) {
@@ -6,7 +6,7 @@ function range(start, end) {
     for (let i = start; i <= end; i++) {
         rangeList.push(i);
     }
-    return rangeList
+    return rangeList;
 }
 
 function randrange(min, max) {
@@ -38,21 +38,21 @@ function arrayShuf(arraY) {
 }
 
 //factorial
-
-let loops = 1;
-for (let i = 2; i <= mainArr.length; i++) {
-    loops *= i;
-} 
-
+function factorial(arr) {
+    let loops = 1;
+    for (let i = 2; i <= arr.length; i++) {
+        loops *= i;
+    }
+    return loops;
+}
 
 let copyArr;
 while (listComb.length !== loops) {
     copyArr = arrayShuf(mainArr).slice();
     if (listComb.indexOf(copyArr) === -1) {
         listComb.push(copyArr);
-
     }
 }
 
-console.log('array combination of', mainArr, 'is');
+console.log("array combination of", mainArr, "is");
 console.log(listComb);

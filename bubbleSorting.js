@@ -6,9 +6,9 @@ function bubbleSort(list) {
         for (let j = 0; j < list.length; j++) {
             if (list[j+1] < list[j]) {
                 [list[j+1], list[j]] = [list[j], list[j+1]];
-            };
-        };
-    };
+            }
+        }
+    }
     return list;
-};
+}
 console.log(bubbleSort(arr));

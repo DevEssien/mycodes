@@ -6,7 +6,7 @@ function range(start, end) {
     }
     return rangeList;
 }
-//console.log(range(1,5))
+//console.log(range(1,5));
 
 //range of random numbers from start to end exclusive
 function randrange(min, max) {
@@ -27,4 +27,4 @@ function arrayShuf(arraY) {
     }
     return arrCopy;
 }
-console.log(arrayShuf(['a','b','c','d','e','f','g','h','i','j']));
+console.log(arrayShuf(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]));
